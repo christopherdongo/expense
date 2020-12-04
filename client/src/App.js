@@ -19,10 +19,10 @@ function App() {
           </div>
         </div>
         <div className="row container2">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 w-full">
             <AddTransaction />
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 tracker-list">
+          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 w-100 tracker-list">
             <TransactionList />
           </div>
         </div>

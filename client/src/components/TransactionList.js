@@ -13,7 +13,7 @@ const TransactionList =()=>{
 
     return(
         <>
-         <h3>History</h3>
+         <h3>Historial</h3>
          <div className="div-history">
          <ul className="list">
          { transactions.map( item => {
