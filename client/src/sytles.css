@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+*,::after,
+::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+.header{
+  display: grid;
+  height: 3rem;
+  place-content: initial;
+  margin-bottom: 40px;
+   
+}
+.header .title{
+  text-transform: capitalize;
+  margin-top:2rem;
+  font-size: 30px;
+  text-align: left !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  border-bottom:2px solid black;
+  padding-left:2rem;
+}
+
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/*form*/
+.form-div{
+  display: flex;
+  flex-direction: column;
+}
+.inc-exp-container{
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.inc-exp-container > div{
+    display: flex 1;
+    text-align: center;  
+}
+.inc-exp-container >div:nth-child(2){
+  border-right: 5px solid #dedede ;
+  
+}
+/*
+.inc-exp-container > div:first-of-type{
+  border-right: 1px solid #dedede ;
+  padding-right: 100px;
+}*/
+h3{
+  margin-top:10px;
+  border-bottom:1px solid #bbb;
+  padding-bottom:10px;
+}
+h4{
+  margin:0;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1{
+  text-align: center;
+}
+.list{
+  list-style-type: none;
+  list-style: none;
+  padding:0;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+.list li{
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding:10px;
+  margin:10px 0;
+  background-color: grey;
+}
+.list li.plus{
+  border-right: 5px solid #2ecc71 ;
+}
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+.money{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+money.plus{
+  color: #2ecc71;
+}
+.money.minus{
+  color: #c0392b;
+}
+label{
+  display: inline-block;
+  margin: 10px 0;
+}
+input[type="text"],
+input[type='number']{
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding:5px;
+  width: 100%;
+}
+.button{
+  cursor: pointer;
+  background-color:var(--clr-primary-3);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size:16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.button:hover{
+  background-color:var(--clr-primary-2);
+  box-shadow: var(--box-shadow)
+}
+.button:focus,
+.delete-button:focus {
+     outline: 0;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li.plus {
+  display: flex;
+  border-right: 5px solid #2ecc71;
+  justify-content: space-between;
+  text-align: center;
+ 
+}
+.list li.minus {
+  text-align: center;
+  display: flex;
+  border-right: 5px solid #c0392b;
+  justify-content: space-between;
+}
+
+/*formulario edit*/
+.icon-edit{
+  width: 2rem;
+  height: 1rem;
+}
+.editar-btn{
+    background-color: var(--clr-primary-8);
+    font-size: 15px;
+    border: 0;
+    color: fff;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 2px 5px;
+    width: 3.5rem;
+    border-radius: 8px;
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: fff;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px 5px;
+  top: 50%;
+  margin-right: -70px;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+.span-botones{
+  padding-right: 70px;
+}
+.span-botones .editar-btn{
+   margin-right: 1rem;
+}
+svg{
+  margin-top:-4px;
+  padding-left:2px;
+}
+.div-history{
+  height: 280px;
+  overflow-x: auto;
+}
+/*alerte*/
+.Toaster__alert{
+  background-color:var(--clr-red-dark);
+}
+.Toaster__alert_text{
+  font-weight: bold;
+}
+.Toaster__alert_close span{
+  font-weight: bold;
+  font-size:1.5rem;
+}
+
+/*botones del modal*/
+.close-btn-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 2rem;
+  margin-bottom:2rem;
+  background-color: #e74c3c;
+}
+.icon-close-modal{
+  width: 3rem;
+  height: 3rem;
+  padding-top:4px;
+  cursor: pointer;
+}
+.button-modal-cerrar svg:hover{
+  color: red;
+}
+.ReactModal__Content--after-open{
+  color: #222 !important;
+  background-color:var(--clr-grey-10) !important;
+  width: 70% !important;
+}
+
+.containervalor{
+  width: 50%;
+  height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
