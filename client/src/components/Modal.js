@@ -27,7 +27,7 @@ const ModalEdit =({children, closeModal,modalIsOpen})=>{
         >
         <span className="button-modal-cerrar" onClick={closeModal}><AiFillCloseCircle className="icon-close-modal" /></span>
        {/*<button className="close-btn-modal" onClick={closeModal}><AiFillCloseCircle className="icon-close-modal" /></button>*/}
-        <h2 className="text-center font-smaller">Editar Gasto</h2>
+        <h2 className="text-center font-smaller">Guardar</h2>
         {
           children
         }
