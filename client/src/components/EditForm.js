@@ -36,7 +36,7 @@ const EditForm=({item, id, setIsOpen})=>{
           </label>
           <input
           name="amount"
-            type="number"
+            type="text"
             placeholder="Enter amount...."
             value={newData.amount}
             onChange={(e) => setNewData({...newData, amount:e.target.value})}

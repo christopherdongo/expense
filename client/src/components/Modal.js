@@ -13,7 +13,7 @@ const ModalEdit =({children, closeModal,modalIsOpen})=>{
       bottom                : 'auto',
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)',
-      width                  :'70%'
+      width                  :'100%'
     }
   };
     return(
@@ -26,7 +26,6 @@ const ModalEdit =({children, closeModal,modalIsOpen})=>{
           ariaHideApp={false}
         >
         <span className="button-modal-cerrar" onClick={closeModal}><AiFillCloseCircle className="icon-close-modal" /></span>
-       {/*<button className="close-btn-modal" onClick={closeModal}><AiFillCloseCircle className="icon-close-modal" /></button>*/}
         <h2 className="text-center font-smaller">Guardar</h2>
         {
           children
