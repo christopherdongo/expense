@@ -6,6 +6,7 @@ import {DELETE_TRANSACTION,
     UPDATE_TRANSACTION
     } from '../types/Types'
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) =>{
     switch(action.type){
         case DELETE_TRANSACTION:
